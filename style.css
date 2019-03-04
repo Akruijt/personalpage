@@ -15,6 +15,13 @@ header {
   height: 300px;
 }
 
+.headergal {
+  background-image: url("./baldo.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
 h1 {
   color: green;
   text-align: center;
