@@ -1,389 +1,157 @@
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
-
-
-
-
-<title>Anne’s Page</title>
-
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-
-<style type="text/css">code{white-space: pre;}</style>
+<html>
+  <head>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
+.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
 }
-</script>
-
-
-
-<style type="text/css">
-h1 {
-  font-size: 34px;
+.error {
+	font-weight: bold;
+	color: #FF0000;
 }
-h1.title {
-  font-size: 38px;
+.warning {
+	font-weight: bold;
 }
-h2 {
-  font-size: 30px;
+.message {
+	font-style: italic;
 }
-h3 {
-  font-size: 24px;
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
 }
-h4 {
-  font-size: 18px;
+.source {
+  background-color: #f5f5f5;
 }
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
+.left {
   text-align: left;
 }
-</style>
-
-<link rel="stylesheet" href="style.css" type="text/css" />
-
-</head>
-
-<body>
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
+.right {
+  text-align: right;
 }
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
+.center {
+  text-align: center;
 }
-img {
-  max-width:100%;
-  height: auto;
+.hl.num {
+  color: #AF0F91;
 }
-.tabbed-pane {
-  padding-top: 12px;
+.hl.str {
+  color: #317ECC;
 }
-.html-widget {
-  margin-bottom: 20px;
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
 }
-button.code-folding-btn:focus {
-  outline: none;
+.hl.opt {
+  color: #000000;
 }
-summary {
-  display: list-item;
+.hl.std {
+  color: #585858;
 }
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
 }
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+.hl.kwb {
+  color: #B05A65;
 }
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+.hl.kwc {
+  color: #55aa55;
 }
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
 }
 </style>
+    <link href="style.css" type="text/css" rel="stylesheet"></link>
+  <title>Anne's Page</title>
+  </head>
+  <body>
+       <header></header>
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="index2.html">Conference Bingo</a>
+    <a href="recordings.html">Recordings</a>
+    <a href="index.html">Publications</a>
+  </div>
+  
+  <div class="content">
+     <h1 class="title uppercase">Anne's Page</h1>
+      <p>I am a postgraduate student in the University of Verona <a href="http://www.dlls.univr.it/?ent=avvisoin&cs=819&lang=en">Department of Linguistics</a>.
+I work with <a href="http://www.dlls.univr.it/?ent=persona&id=2660">Stefan Rabanus</a>. My project focuses on the case systems of the Alto-Adige region, and Digital Humanities, in the spirit of which I am trying my hand on learning to build my own webpage through HTML5 and CSS.</p>
 
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
+      <h2>Where to find me</h2>
+        <p>During the week days I am usually in our <em>'gekraakte'</em> co-working room, which will not be given up to the authorities without a fight! In the weekends, I try to go out into the nature/countryside/mountains as much as possible, if the weather permits. If not, I also enjoy wandering through nearly empty museums while being chased by bored supposts.</p>
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-<div class="container-fluid main-container">
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-
-
-
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">My Webpage</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">Home</a>
-</li>
-<li>
-  <a href="index2.html">Favo Lang</a>
-</li>
-<li>
-  <a href="secondpage.html">Digital Efforts</a>
-</li>
-<li>
-  <a href="index3.html">HTML test page</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div class="fluid-row" id="header">
-
-
-
-<h1 class="title toc-ignore">Anne’s Page</h1>
-
-</div>
-
-
-<h1>
-“My Website Name”
-</h1>
-<p>I am a postgraduate student in the University of Verona <a href="http://www.dlls.univr.it/?ent=avvisoin&amp;cs=819&amp;lang=en">Department of Linguistics</a>. I work with <a href="http://www.dlls.univr.it/?ent=persona&amp;id=2660">Stefan Rabanus</a>. My project focuses on the case systems of the Alto-Adige region, and Digital Humanities.</p>
-<div id="where-to-find-me" class="section level1">
-<h1>Where to find me</h1>
-<p>Since the PhD office is still ‘under construction’ though in the coming week we hope to finally get a place! <em>Hoop doet leven!</em> ## Favourite haunts Bush Library Doctors bar</p>
-</div>
-<div id="things-i-enjoy-doing-in-my-free-time" class="section level1">
-<h1>Things I enjoy doing in my free time</h1>
-<h4>
-Linguistics stuff
-</h4>
+      <h2>Favourite saints</h2>
+        <ul> 
+          <li>Saint Sebastian</li>
+          <li>Saint Rochus</li>
+        </ul>
+  
+<h2>Things I enjoy doing in my free time</h2>
 <ul>
-<li>
-Reading dictionaries
-</li>
-<li>
-Learning new languages (well starting to learn)
-</li>
+<li><strong>Linguistics stuff</strong></li>
+  <ul>
+    <li>Reading dictionaries</li>
+    <li>Learning new languages (well starting to learn)</li>
+   </ul>
+<li><strong>Non-linguistics stuff</strong></li>
+    <ul>
+      <li>Kayaking</li>
+      <li>Hiking</li>
+      <li>Generic third item (all things come in threes)</li>
+    </ul>
 </ul>
-<p><em>Non-linguistics stuff </em>Kayaking <em>Hiking </em>Generic third item</p>
-<h3>
-Top three things to do in Verona
-</h3>
+
 <ol>
-<li>
-Walk along the City walls
-</li>
-<li>
-See the Arena
-</li>
-<li>
-Have Spritz on one of the squares
-</li>
+<strong class="listtitle">Top three things to do in Verona</strong>
+    <li>Walk along the City walls</li>
+    <li>See the Arena</li>
+    <li>Have Spritz on one of the squares</li>
 </ol>
-</div>
-<div id="my-favourite-webpages-and-animals" class="section level1">
-<h1>My favourite webpages and animals</h1>
-<div id="my-favourite-webpage-is-nos-so-i-can-stay-in-contact-with-dutch-news-and-find-my-favourite-saint-is-saint-rochus-look-my-leg-is-hurting" class="section level2">
-<h2>My favourite webpage is <a href="https://nos.nl/">NOS</a> so I can stay in contact with Dutch news, and find my favourite saint is Saint Rochus (look my leg is hurting) !<img src="https://ksh.wikipedia.org/wiki/St._Rochus#/media/File:Saint_Roch.JPG" alt="a saint with sore leg"/></h2>
-<p><strong>Learning about HTML</strong></p>
-<p>
-Read more about my <a href="https://akruijt.github.io/mywebpage/secondpage.html">Digital Efforts</a>
-</p>
-</body>
-</div>
-</div>
-
-
-
 
 </div>
 
-<script>
+    <h3>Conference bingo</h3>
+    <div>
+      <table border="1">
+        <tr>
+          <td>*speaker refuses to look at the chair holding up the 2 min sign*</td>
+          <td>"Thank you for the data"</td>
+          <td>"How interesting. In MY research...."</td>
+        </tr>
+        <tr>
+          <td>"I do not know that reference, I will right it down *scribbles aimlessly at piece of paper"</td>
+          <td>*skips forwards 40 slides in the Powerpoint*</td>
+          <td>Coffee time!</td>
+        </tr>
+        <tr>
+          <td>Questions?</td>
+          <td>Bonus space</td>
+          <td>*chair is softly waving with 0 min sign in speakers direction*</td>
+        </tr>
+        <tr>
+          <td>*Chair leans over at least three people in the first row with 0 min sign, while making as much noise at possible. Entire room looks at them. Speaker does not</td>
+          <td>"Please send me that reference"</td>
+          <td>And now: Lunch!</td>
+        </tr>
+      </table>
+</div>
 
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
+<br></br>
+<img id=saint src="./saintrochus.JPG" alt="a saint with sore leg"/>
+<br></br>
 
+  <p><em>Learning about HTML</em>
+  <br></br>
+  Read more about my <a href="https://akruijt.github.io/mywebpage/secondpage.html">Digital Efforts</a></p>
 
-</script>
+<div class="image">
+  <p class="caption">
+  The beautiful skyline of Verona!</p>
+</div>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
+<footer>lala</footer>
 </body>
 </html>
