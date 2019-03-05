@@ -5,7 +5,7 @@ html {
   background-color: hsl(191, 53%, 88%);
 }
 
-header {
+.headerind {
   background-color: #F1F1F1;
   text-align: center;
   padding: 20px;
@@ -15,9 +15,38 @@ header {
   height: 300px;
 }
 
+.headergal {
+  background-image: url("baldo.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.headerrec {
+  background-image: url("./images/tanzania.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.headerbin {
+  background-image: url("./images/olifant.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.headerpub {
+  background-image: url("./images/bolzano.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
 h1 {
   color: green;
   text-align: center;
+  font-size: 20px;
 }
 
 .title{
@@ -130,4 +159,10 @@ th, td {
 
 .content {
   padding: 40px;
+}
+
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
 }
