@@ -5,7 +5,7 @@ html {
   background-color: hsl(191, 53%, 88%);
 }
 
-header {
+.headerind {
   background-color: #F1F1F1;
   text-align: center;
   padding: 20px;
@@ -16,7 +16,7 @@ header {
 }
 
 .headergal {
-  background-image: url("./baldo.jpg");
+  background-image: url("baldo.jpg");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -137,4 +137,10 @@ th, td {
 
 .content {
   padding: 40px;
+}
+
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
 }
