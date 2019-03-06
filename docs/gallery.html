@@ -65,13 +65,17 @@
 </style>
 <link href="style.css" type="text/css" rel="stylesheet"></link>
 <title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 400px;
+  background-color: #FFF;
+  font-size:18px;
 }
 
 div.gallery:hover {
@@ -93,6 +97,7 @@ div.desc {
 
 <header class="headergal"></header>
 
+<! --- Navbar --- >
  <div class="topnav">
     <a href="index.html">Home</a>
     <a href="recordings.html">Recordings</a>
@@ -101,7 +106,9 @@ div.desc {
     <a  href="bingo.html">Conference Bingo</a>
  </div>
  
-<div class="content">
+<main>
+<div class="row"> 
+<div class="column">
 
 <div class="gallery">
   <a target="_blank" href="verona1.jpg">
@@ -109,23 +116,24 @@ div.desc {
   </a>
   <div class="desc">Ponte Pietra</div>
 </div>
+  <div class="gallery">
+    <a target="_blank" href="verona2.jpg">
+      <img src="verona2.jpg" alt="Verona" width="600" height="400">
+    </a>
+    <div class="desc">Don't trust a seagul!</div>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="verona2.jpg">
-    <img src="verona2.jpg" alt="Verona" width="600" height="400">
-  </a>
-  <div class="desc">Don't trust a seagul!</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="verona3.jpg">
-    <img src="verona3.jpg" alt="Northern Lights" width="600" height="400">
-  </a>
-  <div class="desc">Verona at night from Castel San Pietro</div>
-</div>
+  <div class="gallery">
+    <a target="_blank" href="verona3.jpg">
+      <img src="verona3.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Verona at night from Castel San Pietro</div>
+  </div>
+  </div>
+</main>
 
 <div>
-<footer>&copy;2019</footer>
+<footer>&copy;A Kruijt 2019</footer>
 </div>
 
 </body>

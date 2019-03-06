@@ -1,18 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 2em;
   font-family: Georgia;
   color: black;
-  background-color: hsl(191, 53%, 88%);
+  background-color: hsl(60, 30%, 97%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width:100%;
+  height: 100%;
+}
+
+/* Font-type */
+@font-face {
+  font-family: Amiri;
+  src: url('https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i');
+}
+
+body {
+  font-family: Amiri, Serif;
+  width: 100%;
+  left:0;
+  margin:0;
+  min-height:100%;
+  padding:0;
+  position: relative;
+  padding-bottom:25px;
+}
+
+header {
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .headerind {
   background-color: #F1F1F1;
   text-align: center;
-  padding: 20px;
+  padding: 0;
   background-image: url("./verona.jpg");
   background-size: cover;
   background-position: center;
   height: 300px;
+  width:100%;
 }
 
 .headergal {
@@ -133,6 +165,7 @@ th, td {
 .topnav {
   background-color: #333;
   overflow: hidden;
+  width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -147,7 +180,7 @@ th, td {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #dcefdc;
   color: black;
 }
 
@@ -161,8 +194,42 @@ th, td {
   padding: 40px;
 }
 
-.footer {
-  background-color: #F1F1F1;
-  text-align: center;
-  padding: 10px;
+footer {
+  background-color: #333;
+  text-align: left;
+  padding: 5px;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  color: #f2f2f2;
+  font-size:17px;
+  position: absolute;
+  height:25px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0;
+}
+
+.gallery {
+  display:inline;
+}
+
+main {
+  width:100%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
