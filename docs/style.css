@@ -57,9 +57,11 @@ body {
 }
 
 h1 {
-  color: #7c795d;
-  text-align: center;
+  color: #3c3c3c;
+  text-align: left;
   font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h2, .listtitle {
@@ -67,6 +69,10 @@ h2, .listtitle {
   text-transform:capitalize;
   font-size: 30px;
   text-align: center;
+}
+
+p {
+  margin-top:0;
 }
 
 /*3. Footer, header, navbar */
@@ -222,20 +228,18 @@ div.desc {
   text-align: center;
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 100%;
+/* 6. Photos */
+
+img {
+  float: right;
+  width:200px;
+  height:200px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 50px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* 6. Leftovers */
+/* 7. Leftovers */
 
 /* This used to be the bottom banner
 .image {
