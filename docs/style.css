@@ -10,9 +10,11 @@
 
 */
 
+/*
 * {
   box-sizing: border-box;
 }
+*/
 
 html {
   font-size: 2em;
@@ -38,6 +40,11 @@ main {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /*2. Font-type */
