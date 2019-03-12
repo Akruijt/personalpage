@@ -96,7 +96,7 @@ header {
 }
 
 .headergal {
-  background-image: url("baldo.jpg");
+  background-image: url("baldo.JPG");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -110,7 +110,7 @@ header {
 }
 
 .headerbin {
-  background-image: url("./images/olifant.jpg");
+  background-image: url("./images/olifant.JPG");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -174,7 +174,7 @@ thead th {
 
 tr {
   background: #ffffff;
-    border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
   margin-bottom: 5px;
 }
 
