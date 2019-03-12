@@ -149,10 +149,10 @@ header {
   background-color: #F1F1F1;
   text-align: center;
   padding: 0;
-  background-image: url("./verona.jpg");
+  background-image: url("./images/verona.jpg");
   background-size: cover;
-  background-position: center;
-  height: 300px;
+  background-position:center;
+  height: 200px;
   width:100%;
 }
 
@@ -218,6 +218,10 @@ header {
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+}
+
+.lang_sel {
+  float: right;
 }
 
 /* 4. Tables */
