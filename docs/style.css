@@ -5,7 +5,8 @@
 3. Footer, header, navbar etc
 4. Tables
 5. Gallery
-6. Leftovers
+6. Images
+7. Leftovers
 
 */
 
@@ -230,7 +231,7 @@ div.desc {
 
 /* 6. Photos */
 
-img {
+.profile {
   float: right;
   width:200px;
   height:200px;
