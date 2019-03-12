@@ -6,7 +6,8 @@
 4. Tables
 5. Gallery
 6. Images
-7. Leftovers
+7. Map
+8. Leftovers
 
 */
 
@@ -183,6 +184,13 @@ header {
   height: 300px;
 }
 
+.headermap {
+  background-image: url("./images/stor.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -304,7 +312,14 @@ div.desc {
   margin: 50px;
 }
 
-/* 7. Leftovers */
+/* 7. Map */
+
+#mapid { 
+  height: 400px; 
+  width: 800px;
+}
+
+/* 8. Leftovers */
 
 /* This used to be the bottom banner
 .image {

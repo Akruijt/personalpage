@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style type="text/css">
+.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+    <link href="style.css" type="text/css" rel="stylesheet"></link>
+  <title>Anne's Page</title>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+  </head>
+  <body>
+       <header class="headermap"></header>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="recordings.html">Recordings</a>
+    <a href="publications.html">Publications</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="bingo.html">Conference Bingo</a>
+    <a class="active" href="map.html">Where in the world am I?</a>
+  </div>
+  
+   <div class="page-wrap" id="mapid"></div>
+   <script>
+   var mymap = L.map('mapid').setView([45.436, 11.00], 12.77);
+   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoiYW5uZWtyIiwiYSI6ImNqdDV5OXBjbzBhdWs0NHBqcjFjbHVuYXQifQ.9FqOaDWFm4WdqlWC2WX6VQ'
+}).addTo(mymap);
+
+var redIcon = L.icon({
+    iconUrl: './icons/red.png',
+    iconSize: [40, 40], // size of the icon
+});
+
+var marker = L.marker([45.436, 11.003], {icon: redIcon}).addTo(mymap);
+    marker.bindPopup("<b>Here I am!");
+    
+
+   </script>
+   
+</body>
+</html>
