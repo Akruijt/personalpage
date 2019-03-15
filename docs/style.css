@@ -58,6 +58,10 @@ main {
   margin: 10px;
 }
 
+#sidebarpic {
+  margin-left:80px;
+}
+
 .left-sidebar {
   -webkit-box-flex: auto;      /* OLD - iOS 6-, Safari 3.1-6 */
   -moz-box-flex: auto;         /* OLD - Firefox 19- */
@@ -126,15 +130,21 @@ h1 {
   margin-bottom: 0;
 }
 
-h2, .listtitle {
-  color: #7c795d;
+h2, .listtitle, h3 {
+  color: #3c3c3c;
   text-transform:capitalize;
   font-size: 30px;
-  text-align: center;
+  text-align: left;
+  margin-top:0;
+  margin-bottom:0;
 }
 
 p {
   margin-top:0;
+}
+
+ul { 
+  margin-top: 0;
 }
 
 /*3. Footer, header, navbar */
