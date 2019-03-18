@@ -3,6 +3,7 @@
  <head>
     <link href="../style.css" type="text/css" rel="stylesheet"></link>
    <link rel='shortcut icon' href='../favicon.png' type='image/png'/>
+   <script type="text/javascript" src="clock_nl.js"></script>
   <title>Anne's Page</title>
   </head>
   <body>
@@ -39,7 +40,9 @@
    </ul>
 </section>
   
-<aside class="left-sidebar"></aside>
+<aside class="left-sidebar">      
+    <span id="clock_nl"></span>
+    <script type="text/javascript">window.onload = clock_nl('clock_nl');</script></aside>
 <aside class="main-sidebar"><img class="profile" src="../images/anne.jpg" alt="Profile Picture"/>
 <div id="sidebarpic">
 <h3>Links</h3>
