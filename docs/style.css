@@ -17,6 +17,44 @@
 }
 */
 
+/* Testing the searchable list recordings*/
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 80%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  width: 80%;
+  padding: 12px;
+  padding-right: 100px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+/* End test list*/
+
 html {
   font-size: 2em;
   font-family: Georgia;
@@ -174,35 +212,35 @@ header {
   background-image: url("images/baldo.JPG");
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 200px;
 }
 
 .headerrec {
   background-image: url("./images/tanzania.jpg");
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 200px;
 }
 
 .headerbin {
   background-image: url("./images/olifant.JPG");
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 200px;
 }
 
 .headerpub {
   background-image: url("./images/bolzano.jpg");
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 200px;
 }
 
 .headermap {
   background-image: url("./images/stor.jpg");
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 200px;
 }
 
 /* Add a black background color to the top navigation */
@@ -337,7 +375,22 @@ div.desc {
   width: 800px;
 }
 
-/* 8. Leftovers */
+/* Social media buttons */
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/* 9. Leftovers */
 
 /* This used to be the bottom banner
 .image {

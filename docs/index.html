@@ -65,7 +65,9 @@
 </style>
     <link href="style.css" type="text/css" rel="stylesheet"></link>
     <link rel='shortcut icon' href='favicon.png' type='image/png'/>
+    <script type="text/javascript" src="clock.js"></script>
   <title>Anne's Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
        <header class="headerind"></header>
@@ -100,11 +102,15 @@
    </ul>
 </section>
 
-<aside class="left-sidebar"></aside>
+<aside class="left-sidebar">
+      <span id="clock"></span>
+    <script type="text/javascript">window.onload = clock('clock');</script>
+    </aside>
 <aside class="main-sidebar"><img class="profile" id="sidebarpic" src="./images/anne.jpg" alt="Profile Picture"/><br></br>
 <div id="sidebarpic">
 <h3>Links</h3>
 <p><a href="https://riftvalleynetwork.wordpress.com/">Rift Valley Network</a>
+<a href="https://www.facebook.com/RiftValleyNetwork/" class="fa fa-facebook"></a>
 </div>
 </aside>
 

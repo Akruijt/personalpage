@@ -69,7 +69,7 @@
   <title>Anne's Page</title>
   </head>
   <body>
-       <header class="headerind"></header>
+       <header class="headerrec"></header>
   <div class="topnav">
     <a  href="index_nl.html">Home</a>
     <a class="active" href="recordings_nl.html">Opnames</a>
@@ -83,28 +83,56 @@
   
   <div class="page-wrap">
   <section class="main-content" role="main">
-   <h1>Recordings</h1>
-    <p>This page will contain the recordings of my data in the future</p>
-    
-    <p id="demo"></p>
-    <script type="text/javascript">
-    document.getElementById("demo").innerHTML = "Hello JavaScript!";
-    </script>
-    
-    <p>Test if Github page is actually updated</p>
-  </section>
-  <aside class="main-sidebar" role="complementary">
-  <h3>First test Audio in Docs file</h3>
-    <audio controls>
-	   <source src="../audio/testsmall.mp3" type="audio/mp3" />
-	   Error: your web browser does not support this audio player.
-  </audio>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
-  <h3>Second test Audio in Audio folder</h3>
+<ul id="myUL">
+  <li><a href="#">Battery Kinsie - Fleet Foxes
+    <audio controls>
+	   <source src="../audio/fleet_battery.mp3" type="audio/mp3" />
+	   Error: your web browser does not support this audio player.
+  </audio></a></li>
+  <li><a href="#">Sunrise - Norah Jones
 <audio controls>
 	   <source src="../audio/testsmall.mp3" type="audio/mp3" />
 	   Error: your web browser does not support this audio player.
-  </audio>
+  </audio></a></li>
+
+  <li><a href="#">Blue Spotted Tail - Fleet Foxes
+<audio controls>
+	   <source src="../audio/fleet_blue.mp3" type="audio/mp3" />
+	   Error: your web browser does not support this audio player.
+  </audio></a></a></li>
+  <li><a href="#">Ophelia - The Lumineers
+<audio controls>
+	   <source src="../audio/ophelia.mp3" type="audio/mp3" />
+	   Error: your web browser does not support this audio player.
+  </audio></a></a></li>
+
+  <li><a href="#">Say a little prayer - Aretha Franklin
+<audio controls>
+	   <source src="../audio/franklin.mp3" type="audio/mp3" />
+	   Error: your web browser does not support this audio player.
+  </audio></a></a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
   </aside>
   
   <aside class="left-sidebar" role="left"></aside>
