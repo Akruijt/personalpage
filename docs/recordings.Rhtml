@@ -4,7 +4,8 @@
 
 <head>
     <link href="style.css" type="text/css" rel="stylesheet"></link>
-        <link rel='shortcut icon' href='favicon.png' type='image/png'/>
+     <link rel='shortcut icon' href='favicon.png' type='image/png'/>
+     <script type="text/javascript" src="clock.js"></script>
   <title>Recordings</title>
 </head>
 
@@ -19,6 +20,8 @@
     <a href="gallery.html">Gallery</a>
     <a href="bingo.html">Conference Bingo</a>
     <a href="map.html">Where in the world am I?</a>
+    <a style="float:right" href="nl/recordings_nl.html">NL <img src="icons/nederland.png" style="height:17px; width:17px;"></a>
+    <a style="float:right" href="recordings.html">EN <img src="icons/canada.png" style="height:17px; width:17px;"></a>
  </div>
  
 <div class="page-wrap">
@@ -26,12 +29,29 @@
    <h1>Recordings</h1>
     <p>This page will contain the recordings of my data in the future</p>
     
-    <p id="demo"></p>
-    <script type="text/javascript">
-    document.getElementById("demo").innerHTML = "Hello JavaScript!";
-    </script>
+    <span id="clock"></span>
+    <script type="text/javascript">window.onload = clock('clock');</script>
+     
+     <div id="clockbox"></div>
+
+<script type="text/javascript">
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+var nhour=d.getHours(),nmin=d.getMinutes();
+if(nmin<=9) nmin="0"+nmin
+
+var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
     
-    <p>Test if Github page is actually updated</p>
   </section>
   <aside class="main-sidebar" role="complementary">
   <h3>First test Audio in Docs file</h3>
