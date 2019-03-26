@@ -65,7 +65,7 @@
 </style>
     <link href="../style.css" type="text/css" rel="stylesheet"></link>
    <link rel='shortcut icon' href='../favicon.png' type='image/png'/>
-   <script type="text/javascript" src="clock_nl.js"></script>
+   <script type="text/javascript" src="../js/clock_nl.js"></script>
   <title>Anne's Page</title>
   </head>
   <body>
@@ -79,7 +79,6 @@
     <a href="map_nl.html">Waar in de wereld ben ik?</a>
     <a style="float:right" href="index_nl.html">NL <img src="../icons/nederland.png" style="height:17px; width:17px;"></a>
     <a style="float:right" href="../index.html">EN <img src="../icons/canada.png" style="height:17px; width:17px;"></a>
-    <a href="nl/nl_test.html">Test</a>
   </div>
   
   <div class="page-wrap">
@@ -103,8 +102,7 @@
 </section>
   
 <aside class="left-sidebar">      
-    <span id="clock_nl"></span>
-    <script type="text/javascript">window.onload = clock_nl('clock_nl');</script></aside>
+</aside>
 <aside class="main-sidebar"><img class="profile" src="../images/anne.jpg" alt="Profile Picture"/>
 <div id="sidebarpic">
 <h3>Links</h3>
@@ -114,7 +112,9 @@
 
 </div>
 
-<footer>&copy; A Kruijt 2019</footer>
+<footer>&copy; A Kruijt 2019 
+  <span id="clock_nl"></span>
+    <script type="text/javascript">window.onload = clock_nl('clock_nl');</script></footer>
 
 </body>
 </html>
