@@ -328,6 +328,24 @@ footer {
   text-align:center;
 }
 
+#cv {
+  width: 100%;
+}
+
+table#cv td {
+  vertical-align: top;
+  text-align: left;
+}
+
+table#cv th {
+  color: #3c3c3c;
+  text-transform:capitalize;
+  font-size: 30px;
+  text-align: left;
+  margin-top:0;
+  margin-bottom:0;
+}
+
 /* 5. Gallery */
 
 .gallery {
