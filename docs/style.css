@@ -332,9 +332,10 @@ footer {
   width: 100%;
 }
 
-table#cv td {
+table#cv td, th {
   vertical-align: top;
   text-align: left;
+  padding:10px;
 }
 
 table#cv th {
@@ -345,6 +346,7 @@ table#cv th {
   margin-top:0;
   margin-bottom:0;
 }
+
 
 /* 5. Gallery */
 
