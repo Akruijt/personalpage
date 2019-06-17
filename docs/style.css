@@ -242,6 +242,13 @@ header {
   height: 200px;
 }
 
+.headercv {
+  background-image: url("./images/collalbo.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 200px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
