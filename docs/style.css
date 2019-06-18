@@ -200,7 +200,7 @@ header {
   background-color: #F1F1F1;
   text-align: center;
   padding: 0;
-  background-image: url("./images/verona.jpg");
+  background-image: url("./images/verona4.jpg");
   background-size: cover;
   background-position:center;
   height: 200px;
@@ -222,21 +222,21 @@ header {
 }
 
 .headerbin {
-  background-image: url("./images/olifant.JPG");
+  background-image: url("./images/nepal.jpg");
   background-size: cover;
   background-position: center;
   height: 200px;
 }
 
 .headerpub {
-  background-image: url("./images/bolzano.jpg");
+  background-image: url("./images/wreckbeach.JPG");
   background-size: cover;
   background-position: center;
   height: 200px;
 }
 
 .headermap {
-  background-image: url("./images/stor.jpg");
+  background-image: url("./images/schot.jpg");
   background-size: cover;
   background-position: center;
   height: 200px;
