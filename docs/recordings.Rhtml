@@ -14,17 +14,14 @@
 
 <header class="headerrec"></header>
 
- <div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
-    <a href="publications.html">Publications</a>
-    <a class="active" href="recordings.html">Audio files</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="bingo.html">Conference Bingo</a>
-    <a href="map.html">Where in the world am I?</a>
-    <a style="float:right" href="nl/recordings_nl.html">NL <img src="icons/nederland.png" style="height:16px; width:16px;"></a>
-    <a style="float:right" href="recordings.html">EN <img src="icons/canada.png" style="height:16px; width:16px;"></a>
- </div>
+ <div id="nav-placeholder">
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
+</div>
  
 <div class="page-wrap">
   <section class="main-content" role="main">
@@ -34,9 +31,7 @@
     <p>Audio files are available for the following articles:</p>
     <break></break>
     <p>WORK IN PROGRESS:Kruijt, Anne (2018). <em>The use of the ablative clitic in locative phrases in Iraqw, a Cushitic language of Tanzania</em>. Journal of African Languages and Linguistics, 39 (2):241-265.</p>
-    
-  </section>
-  <aside class="main-sidebar" role="complementary">
+
   
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
@@ -94,7 +89,7 @@ function myFunction() {
     }
 }
 </script>
-  </aside>
+  </section>
   
   <aside class="left-sidebar" role="left">
       <span id="clock"></span>

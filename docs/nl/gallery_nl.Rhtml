@@ -13,17 +13,14 @@
 <header class="headergal"></header>
 
 <! --- Navbar --- >
- <div class="topnav">
-    <a href="index_nl.html">Home</a>
-    <a href="cv_nl.html">CV</a>
-    <a href="publications_nl.html">Publicaties</a>
-    <a href="recordings_nl.html">Audio files</a>
-    <a class="active" href="gallery_nl.html">Gallerij</a>
-    <a  href="bingo_nl.html">Conferentie Bingo</a>
-    <a href="map_nl.html">Waar ben ik?</a>
-    <a style="float:right" href="gallery_nl.html">NL <img src="../icons/nederland.png" style="height:16px; width:16px;"></a>
-    <a style="float:right" href="../gallery.html">EN <img src="../icons/canada.png" style="height:16px; width:16px;"></a>
- </div>
+ <div id="nav-placeholder">
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
+</div>
 
 <div class="page-wrap">
 <main>

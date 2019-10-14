@@ -253,35 +253,7 @@ header {
   height: 200px;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  width: 100%;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: whitesmoke;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
+/*Navbar*/
 #lang_sel {
   float: right;
   margin:0;
@@ -299,6 +271,10 @@ li {
   float: left;
 }
 
+.dropdown-content li {
+  float: none;
+}
+
 li a, .dropbtn {
   display: inline-block;
   color: white;
@@ -308,12 +284,14 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: whitesmoke;
+  color: black;
 }
 
 li.dropdown {
-  display: inline-block;
+  display: block;
 }
+
 
 .dropdown-content {
   display: none;
@@ -337,6 +315,8 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
 
 /* 4. Tables */
 table {
