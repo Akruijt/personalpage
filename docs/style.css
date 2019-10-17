@@ -11,11 +11,9 @@
 
 */
 
-/*
 * {
   box-sizing: border-box;
 }
-*/
 
 /* Testing the searchable list recordings*/
 
@@ -23,7 +21,7 @@
   background-image: url('/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
-  width: 80%;
+  width: 100%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
@@ -33,24 +31,31 @@
 #myUL {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  width:900px;
 }
 
 #myUL li a {
   border: 1px solid #ddd;
   margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  width: 80%;
+  background-color: white;
+  width: 900px;
   padding: 12px;
   padding-right: 100px;
   text-decoration: none;
   font-size: 18px;
   color: black;
-  display: block
+  text-align:left;
+  display:block;
+}
+
+#myUL p {
+  text-align:right;
+  width:100%;
 }
 
 #myUL li a:hover:not(.header) {
-  background-color: #eee;
+  background-color: /*#eee*/#f6f6f6;
 }
 
 /* End test list*/
